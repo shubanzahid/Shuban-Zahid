@@ -74,6 +74,8 @@
 	color: #ffffff;
 }
 
+
+
 /*Banner Section style*/
 
 #banner-section {
@@ -350,6 +352,7 @@
   position: relative;
   display: inline-block;
   margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .overlay {
@@ -367,10 +370,10 @@
   	opacity: 1;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -60px;
     z-index: 3;
     position: absolute;
-    transition: all ease-in-out 0.7s;
+    transition: 0.3s;
     display: flex;
     justify-content: center;
 }
@@ -378,12 +381,17 @@
 .hover-content a {
 	background: rgba(20, 157, 221, 0.75);
 	color: #ffffff;
-	font-size: 25px;
+	font-size: 18px;
 	width: 50%;
 	text-align: center;
 	opacity: 0;
-	margin-left: 1px;
+	padding: 8px 0px;
 }
+
+.hover-content a:hover {
+	background: rgba(20, 157, 221, 0.95);
+}
+
 
 .image-container:hover .hover-content a {
 	opacity: 1;
@@ -395,6 +403,7 @@
 
 .image-container:hover .hover-content {
   opacity: 1;
+  bottom: 0;
 }
 
 
@@ -678,39 +687,56 @@
 
 
 
-
+.mobile-nav-toggle {
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    z-index: 9;
+    font-size: 18px;
+    background-color: #149ddd;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+	opacity: 0;
+}
 
 
 /*Responsive desing*/
 
 @media only screen and (max-width:992px) {
 
-	.hamburger {
-			display: block;
-	    position: fixed;
-	    right: 17px;
-	    top: 15px;
-	    padding: 3px 10px;
-	    border-radius: 30px;
-	    background-color: #149ddd;
-	    color: white;
-	    font-size: 22px;
-	    z-index: 9;
+	.mobile-nav-toggle {
+		opacity: 1;
 	}
-
 	#header {
 		display: none;
+		z-index: 12;
+	}
+
+	.header-contant {
+		height: 100vh;
+		overflow-y: auto;
+		padding: 0 10px;
 	}
 
 	#main {
 		margin: 0;
 	}
 
-	#banner-section:after {
-		left: 0;
+
+	.banner h1 {
+		font-size: 48px;
+		
 	}
 
 	#about-section h3 {
 		margin-top: 20px;
 	}
+	
 }
