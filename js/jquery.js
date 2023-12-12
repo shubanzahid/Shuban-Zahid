@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+$(document).ready(function ($) {
     $('.counter').counterUp({
         delay: 10,
         time: 1000
@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    mobileNavToggle.click(function () {
+    mobileNavToggle.on('click', function () {
         if ($(window).width() <= 992) {
             // Toggle the display and position only on smaller screens
             if (header.css('left') === '0px') {
