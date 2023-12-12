@@ -634,6 +634,7 @@
 	background: #ffffff;
 	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 	padding: 38px 30px;
+	margin-top: 24px;
 }
 
 .contacts-input label {
