@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/isotope-layout@4.0.0/dist/isotope.min.css">
 
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -494,23 +495,25 @@
                     </p>
                 </div>
                 <div class="d-flex justify-content-center wow fadeInUp" data-wow-delay="0.5s">
-                    <ul>
-                        <li class="active">ALL</li>
-                        <li>APP</li>
-                        <li>Card</li>
-                        <li>Web</li>
-                    </ul>
+                    <div class="portfolio-menu">
+                        <ul class="tabs">
+                            <li class="active" data-filter="*">ALL</li>
+                            <li data-filter=".app">APP</li>
+                            <li data-filter=".card">Card</li>
+                            <li data-filter=".web">Web</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="row position-use wow fadeInUp" data-wow-delay="1s">
-                    <div class="col-lg-4 col-md-6" data-category="app">
+                <div class="row portfolio-item wow fadeInUp" data-wow-delay="1s">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-1.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container app">
                             <img class="img-fluid" src="./images/portfolio-1.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -521,14 +524,14 @@
 
                     </div>
 
-                    <div class="col-lg-4 col-md-6" data-category="app">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-2.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container web">
                             <img class="img-fluid" src="./images/portfolio-2.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -538,13 +541,13 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6" data-category="app">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-3.jpg">
                                 </div>
                             </div> -->
-                        <div class="image-container">
+                        <div class="image-container app">
                             <img class="img-fluid" src="./images/portfolio-3.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -556,14 +559,14 @@
                 </div>
 
                 <div class="row wow fadeInUp">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-4.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container card-1">
                             <img class="img-fluid" src="./images/portfolio-4.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -573,14 +576,14 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-5.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container web">
                             <img class="img-fluid" src="./images/portfolio-5.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -590,14 +593,14 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-6.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container app">
                             <img class="img-fluid" src="./images/portfolio-6.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -609,14 +612,14 @@
                 </div>
 
                 <div class="row wow fadeInUp">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-7.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container card-1 filter-item">
                             <img class="img-fluid" src="./images/portfolio-7.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -626,14 +629,14 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-8.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container card-1">
                             <img class="img-fluid" src="./images/portfolio-8.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -643,14 +646,14 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 filter-item">
                         <!-- <div class="portfolio-wrap">
                                 <div class="portfolio-inner">
                                     <img class="img-fluid" src="./images/portfolio-9.jpg">
                                 </div>
                             </div> -->
 
-                        <div class="image-container">
+                        <div class="image-container web">
                             <img class="img-fluid" src="./images/portfolio-9.jpg">
                             <div class="overlay"></div>
                             <div class="hover-content">
@@ -1011,6 +1014,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="./js/jquery.counterup.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script type="text/javascript">

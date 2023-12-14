@@ -71,5 +71,30 @@ $(document).ready(function ($) {
         }
     });
 
+    // external js: isotope.pkgd.js
+
+    $('.portfolio-menu ul li').on('click', function () {
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        // Get the data-filter value
+        let selector = $(this).attr('data-filter');
+
+        // Filter the items using Isotope
+        $('.portfolio-item').isotope({
+            filter: selector,
+            layoutMode: 'fitRows'
+        });
+
+        return false;
+    });
+
+    // Initial Isotope setup
+    $('.portfolio-item').isotope({
+        itemSelector: '.filter-item',
+        layoutMode: 'fitRows'
+    });
+
+
 
 });

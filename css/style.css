@@ -323,8 +323,11 @@
     cursor: pointer;
 }
 
-#portfolio-section ul li:hover,
-#portfolio-section ul li:active {
+#portfolio-section ul li.active {
+	color: #149ddd;
+}
+
+#portfolio-section ul li:hover {
 	color: #149ddd;
 }
 
