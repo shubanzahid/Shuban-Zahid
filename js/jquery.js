@@ -72,7 +72,6 @@ $(document).ready(function ($) {
     });
 
     // external js: isotope.pkgd.js
-
     $('.portfolio-menu ul li').on('click', function () {
         $('.portfolio-menu ul li').removeClass('active');
         $(this).addClass('active');
@@ -94,6 +93,9 @@ $(document).ready(function ($) {
         itemSelector: '.filter-item',
         layoutMode: 'fitRows'
     });
+
+    new WOW().init();
+
 
 
 
